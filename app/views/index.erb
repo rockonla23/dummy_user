@@ -1,0 +1,19 @@
+<div class="container">
+  <% if login? %>
+    <h1>"Welcome <%= "#{username}" %>!"</h1>
+    <a href ="/logout"> Logout </a>
+  <% else %>
+    <form name = "firstname" form action="/login" method="post">
+      Username: <input type="text" name="email"><br>
+      Password: <input type="password" name="password">
+      <input type="submit" value="Login">
+      <input type="reset" value="Reset">
+    </form>
+    <br><a href ="/signup"> Register </a>
+  <% end %>
+</div>
+
+
+
+  
+
